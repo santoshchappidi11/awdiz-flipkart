@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart-navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #flipkart-navbar {
+        height: 65px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(40, 116, 240);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #navbar {
+        height: 100%;
+        width: 75%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      #logo {
+        height: 100%;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #search {
+        height: 100%;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5px;
+      }
+
+      #login {
+        height: 100%;
+        width: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #other {
+        height: 100%;
+        width: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #more {
+        height: 100%;
+        width: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #cart {
+        height: 100%;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="flipkart-navbar">
+      <div id="navbar">
+        <div id="logo">
+          <h2 style="font-style: italic">
+            Flipkart
+            <i
+              style="
+                font-size: 15px;
+                font-family: 'Times New Roman', Times, serif;
+              "
+              >Explore <span style="color: rgb(255, 230, 0)">plus</span></i
+            >
+          </h2>
+        </div>
+        <div id="search">
+          <div
+            style="
+              height: auto;
+              width: 100%;
+              /* border: 1px solid rgb(218, 218, 218); */
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: white;
+            "
+          >
+            <input
+              type="text"
+              style="
+                height: 35px;
+                width: 450px;
+                border: none;
+                padding-left: 15px;
+              "
+              placeholder="Search for products, brands and more"
+            />
+            <i
+              style="
+                color: black;
+                font-size: 25px;
+                height: 100%;
+                width: 80px;
+                text-align: center;
+                color: rgb(40, 116, 240);
+              "
+              class="fa-solid fa-magnifying-glass"
+            ></i>
+          </div>
+        </div>
+        <div id="login">
+          <button
+            style="
+              border: none;
+              height: 30px;
+              width: 115px;
+              color: rgb(40, 116, 240);
+              background-color: white;
+              font-weight: bold;
+              font-size: 16px;
+              font-family: Arial, Helvetica, sans-serif;
+            "
+          >
+            Login
+          </button>
+        </div>
+        <div id="other">
+          <b
+            style="
+              font-size: 15px;
+              font-family: Arial, Helvetica, sans-serif;
+              padding-left: 5px;
+            "
+            >Become a Seller</b
+          >
+        </div>
+        <div id="more">
+          <b> More </b>
+          <i
+            style="padding-top: 5px; padding-left: 5px"
+            class="fa-sharp fa-solid fa-angle-down"
+          ></i>
+        </div>
+
+        <div id="cart">
+          <i class="fa-sharp fa-solid fa-cart-shopping fa-2x"></i>
+          <b style="padding-left: 5px">Cart</b>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

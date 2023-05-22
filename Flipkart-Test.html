@@ -22,42 +22,64 @@
         box-sizing: border-box;
       }
 
+      .center-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .left-filters-structure {
+        height: 10%;
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+      }
+
+      .left-filters-header-style {
+        padding: 15px;
+        font-size: 15px;
+      }
+
+      .left-filters-icon-down-style {
+        padding-right: 10px;
+        color: grey;
+      }
+
+      .border-bottom {
+        border-bottom: 1px solid rgb(225, 225, 225);
+      }
+
       #screen {
         height: 800px;
         width: 100%;
-        /* border: 1px solid black; */
       }
 
       #flipkart-navbar {
-        height: 15%;
+        height: 7%;
         width: 100%;
         background-color: rgb(40, 116, 240);
-        /* border: 1px solid red; */
       }
 
       #navbar {
-        height: 65%;
-        width: 75%;
+        height: 100%;
+        width: 80%;
         margin: auto;
-        display: flex;
         justify-content: space-around;
-        align-items: center;
-        background-color: rgb(40, 116, 240);
         color: white;
-        /* border: 1px solid green; */
+        background-color: rgb(40, 116, 240);
       }
 
       #logo {
-        height: 80%;
+        height: auto;
         width: 10%;
-        text-align: center;
-        /* border: 1px solid black; */
+        flex-direction: column;
       }
 
       #logo > p {
         font-size: 20px;
         font-weight: bold;
         font-style: italic;
+        margin-bottom: -5px;
       }
 
       #logo > i {
@@ -65,309 +87,432 @@
       }
 
       #search {
-        height: 60%;
-        width: 45%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 70%;
+        width: 42%;
         border: none;
-        /* border: 1px solid black; */
       }
 
       #search > #flipkart-search {
         height: 90%;
         width: 98%;
-        display: flex;
         justify-content: space-around;
-        align-items: center;
         background-color: white;
         color: rgb(40, 116, 240);
-        /* border: 1px solid red; */
       }
 
       #login {
-        height: 60%;
-        width: 11%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* border: 1px solid black; */
+        height: 75%;
+        width: 12%;
       }
 
       #login > button {
-        height: 65%;
-        width: 100%;
+        height: 74%;
+        width: 95%;
         border: none;
         background: none;
         color: rgb(40, 116, 240);
         background-color: white;
         font-weight: bold;
-        /* border: 1px solid grey; */
       }
 
       #others {
         height: 100%;
         width: 30%;
-        display: flex;
         justify-content: space-around;
-        align-items: center;
-        font-weight: bold;
-        /* border: 1px solid black; */
       }
 
       #others > #cart {
         height: 50%;
         width: 20%;
-        display: flex;
         justify-content: space-around;
-        align-items: center;
-        /* border: 1px solid black; */
-        display: flex;
       }
 
       #sub-navbar {
-        height: 35%;
+        height: 5%;
         width: 100%;
-        display: flex;
         justify-content: space-evenly;
-        align-items: center;
         background-color: white;
-        border: 1px solid grey;
+        margin-bottom: 10px;
       }
 
       #sub-navbar > div {
         height: 20px;
         width: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 15px;
-        font-weight: 500;
-        /* border: 1px solid black; */
+        font-size: 13px;
+        font-weight: bold;
+        color: rgb(36, 36, 36);
       }
 
       #sub-navbar > div > i {
         padding-top: 5px;
         padding-left: 5px;
         font-size: 12px;
+        color: grey;
       }
 
       #body {
-        height: 80%;
-        width: 98%;
+        height: 100vh;
+        width: 99%;
         margin: auto;
         display: flex;
         justify-content: space-between;
-        border: 1px solid black;
       }
 
       #body > #left {
-        height: 100%;
+        height: 115%;
         width: 20%;
-        border: 1px solid black;
+        flex-direction: column;
+        border: 1px solid rgb(225, 225, 225);
       }
 
       #body > #left > #filters {
-        height: 20%;
-        width: 95%;
+        height: 18%;
+        width: 100%;
         margin: auto;
-        border: 1px solid black;
       }
 
       #body > #left > #filters > h3 {
         padding: 15px;
+        font-size: 18px;
       }
 
       #body > #left > #filters > #filter-women {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
         height: 25%;
         width: 30%;
         border-radius: 4px;
         margin-left: 15px;
+        justify-content: space-around;
         background-color: rgb(214, 214, 214);
-        /* border: 1px solid black; */
       }
 
       #body > #left > #categories {
-        height: 30%;
-        width: 95%;
+        height: 20%;
+        width: 100%;
         margin: auto;
-        border: 1px solid black;
       }
 
-      #body > #left > #categories > h3 {
-        padding: 15px;
-      }
-
-      #body > #left > #categories > div{
+      #body > #left > #categories > div {
         height: auto;
-        width: 60%;
-      
-        /* border: 1px solid black; */
+        width: 90%;
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        font-size: 14px;
       }
 
-      #body > #left > #gender {
-        height: 10%;
-        width: 95%;
-        margin: auto;
-        border: 1px solid black;
+      #body > #left > #categories > div {
+        padding-bottom: 5px;
       }
 
-      #body > #left > #gender > h3 {
-        padding: 15px;
+      #body > #left > #categories > div > i {
+        padding-right: 5px;
       }
 
       #body > #left > #price {
         height: 20%;
-        width: 95%;
+        width: 100%;
         margin: auto;
-        border: 1px solid black;
       }
 
-      #body > #left > #price > h3 {
-        padding: 15px;
-      }
-
-      #body > #left > #brand {
-        height: 10%;
+      #body > #left > #price > .slidecontainer > input {
         width: 95%;
-        margin: auto;
-        border: 1px solid black;
       }
 
-      #body > #left > #brand > h3 {
-        padding: 15px;
+      #body > #left > #price > #range {
+        justify-content: space-between;
+        margin-top: 10px;
       }
 
-      #body > #left > #offers {
-        height: 10%;
-        width: 95%;
-        margin: auto;
-        border: 1px solid black;
+      #body > #left > #price > #range > select {
+        width: 90px;
+        cursor: pointer;
+        border-radius: 3px;
+        margin: 0 6px;
+        border: 1px solid rgb(196, 196, 196);
       }
 
-      #body > #left > #offers > h3 {
-        padding: 15px;
+      #body > #right {
+        height: 115%;
+        width: 79%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border: 1px solid rgb(225, 225, 225);
       }
 
-      #body > #left > #body > #right {
-        height: 100%;
-        width: 78%;
-        border: 1px solid black;
+      #body > #right > .product {
+        height: 350px;
+        width: 225px;
+        margin: 10px 0;
+      }
+
+      #body > #right > .product:hover {
+        border: 1px solid rgb(199, 199, 199);
+        cursor: pointer;
+      }
+
+      #body > #right > .product > img {
+        height: 78%;
+        width: 100%;
+      }
+
+      #body > #right > .product > .description {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+      }
+
+      #body > #right > .product > .description > h4 {
+        font-weight: lighter;
       }
     </style>
   </head>
   <body>
     <div id="screen">
       <div id="flipkart-navbar">
-        <div id="navbar">
-          <div id="logo">
+        <div id="navbar" class="center-items">
+          <div id="logo" class="center-items">
             <p>Flipkart</p>
             <i>Explore <span style="color: rgb(255, 217, 0)">Plus</span></i>
           </div>
-          <div id="search">
-            <div id="flipkart-search">
+          <div id="search" class="center-items">
+            <div id="flipkart-search" class="center-items">
               <input
                 type="text"
                 style="height: 35px; width: 380px; border: none; outline: none"
-                placeholder="search for products, brands and more..."
+                placeholder="Search for products, brands and more"
               />
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
           </div>
-          <div id="login">
-            <button>LOGIN</button>
+          <div id="login" class="center-items">
+            <button>Login</button>
           </div>
-          <div id="others">
-            <p>Become a seller</p>
-            <p>
+          <div id="others" class="center-items">
+            <p style="font-weight: 500">Become a Seller</p>
+            <p style="font-weight: 500">
               More
               <i class="fa-solid fa-angle-down" style="font-size: 12px"></i>
             </p>
-            <div id="cart">
+            <div id="cart" class="center-items">
               <i class="fa-solid fa-cart-shopping"></i>
-              <p style="font-size: 15px">cart</p>
+              <p style="font-size: 15px; font-weight: 500">Cart</p>
             </div>
           </div>
         </div>
-        <div id="sub-navbar">
-          <div>
-            <span>Electronics</span>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <div>
-            <span>TVs & Appliances</span>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <div>
-            <span>Men</span>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <div>
-            <span>Women</span>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <div>
-            <span>Baby & Kids</span>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <div>
-            <span>Home & Furniture</span>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <div>
-            <span>Sports, Books & More</span>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <div>
-            <span>Flights</span>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <div>
-            <span>Offer & Zone</span>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
+      </div>
+      <div id="sub-navbar" class="center-items border-bottom">
+        <div class="center-items">
+          <span>Electronics</span>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="center-items">
+          <span>TVs & Appliances</span>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="center-items">
+          <span>Men</span>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="center-items">
+          <span>Women</span>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="center-items">
+          <span>Baby & Kids</span>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="center-items">
+          <span>Home & Furniture</span>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="center-items">
+          <span>Sports, Books & More</span>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="center-items">
+          <span>Flights</span>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="center-items">
+          <span>Offer & Zone</span>
+          <i class="fa-solid fa-angle-down"></i>
         </div>
       </div>
+
       <div id="body">
-        <div id="left">
-          <div id="filters">
-            <h3>FILTERS</h3>
-            <div id="filter-women">
+        <div id="left" class="center-items">
+          <div id="filters" class="border-bottom">
+            <h3>Filters</h3>
+            <div id="filter-women" class="center-items">
               <i class="fa-solid fa-xmark fa-sm"></i>
               <button style="border: none; background: none; font-size: 11px">
                 Women
               </button>
             </div>
           </div>
-          <div id="categories">
-            <h3>CATEGORIES</h3>
+          <div id="categories" class="border-bottom">
+            <h3 class="left-filters-header-style">CATEGORIES</h3>
             <div>
-                <i class="fa-solid fa-angle-left"></i>
-              <p>Clothing and Accessories</p>
+              <i class="fa-solid fa-angle-left"></i>
+              <p>Clothing and Accessories...</p>
             </div>
             <div>
-                <i class="fa-solid fa-angle-left"></i>
-              <p>Top wear</p>
+              <i class="fa-solid fa-angle-left"></i>
+              <p>Topwear</p>
             </div>
           </div>
-          <div id="gender">
-            <h3>GENDER</h3>
+          <div
+            id="gender"
+            class="center-items left-filters-structure border-bottom"
+          >
+            <h3 class="left-filters-header-style">GENDER</h3>
+            <i class="fa-solid fa-angle-down left-filters-icon-down-style"></i>
           </div>
-          <div id="price">
-            <h3>PRICE</h3>
+          <div id="price" class="border-bottom">
+            <h3 class="left-filters-header-style">PRICE</h3>
+            <div class="slidecontainer center-items">
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="100"
+                class="slider"
+                id="myRange"
+              />
+            </div>
+            <div id="range" class="center-items">
+              <select>
+                <option>MIN</option>
+                <option>₹300</option>
+                <option>₹500</option>
+                <option>₹700</option>
+                <option>₹1000</option>
+              </select>
+              <p>to</p>
+              <select>
+                <option>₹1000+</option>
+                <option>₹300</option>
+                <option>₹500</option>
+                <option>₹700</option>
+              </select>
+            </div>
           </div>
-          <div id="brand">
-            <h3>BRAND</h3>
+          <div
+            id="brand"
+            class="center-items left-filters-structure border-bottom"
+          >
+            <h3 class="left-filters-header-style">BRAND</h3>
+            <i class="fa-solid fa-angle-down left-filters-icon-down-style"></i>
           </div>
-          <div id="offers">
-            <h3>OFFERS</h3>
+          <div
+            id="offers"
+            class="center-items left-filters-structure border-bottom"
+          >
+            <h3 class="left-filters-header-style">OFFERS</h3>
+            <i class="fa-solid fa-angle-down left-filters-icon-down-style"></i>
+          </div>
+          <div
+            id="discount"
+            class="center-items left-filters-structure border-bottom"
+          >
+            <h3 class="left-filters-header-style">DISCOUNT</h3>
+            <i class="fa-solid fa-angle-down left-filters-icon-down-style"></i>
+          </div>
+
+          <div
+            id="discount"
+            class="center-items left-filters-structure border-bottom"
+          >
+            <h3 class="left-filters-header-style">CUSTOMER RATINGS</h3>
+            <i class="fa-solid fa-angle-down left-filters-icon-down-style"></i>
+          </div>
+          <div id="discount" class="center-items left-filters-structure">
+            <h3 class="left-filters-header-style">SIZE</h3>
+            <i class="fa-solid fa-angle-down left-filters-icon-down-style"></i>
           </div>
         </div>
         <div id="right">
-          <h3>right</h3>
+          <div class="product">
+            <img
+              src="https://rukminim1.flixcart.com/image/612/612/l2arp8w0/shopsy-t-shirt/s/3/0/s-nmp-try-this-original-imag5xe3sdhgg8sg.jpeg?q=70"
+            />
+            <div class="description">
+              <p class="type" style="font-size: 14px">Casual Wear</p>
+              <h3 class="price" style="font-size: 18px">₹499</h3>
+              <h4 class="delivery" style="font-size: 12px">Free delivery</h4>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              src="https://rukminim1.flixcart.com/image/612/612/l2arp8w0/shopsy-t-shirt/s/3/0/s-nmp-try-this-original-imag5xe3sdhgg8sg.jpeg?q=70"
+            />
+            <div class="description">
+              <p class="type" style="font-size: 14px">Casual Wear</p>
+              <h3 class="price" style="font-size: 18px">₹499</h3>
+              <h4 class="delivery" style="font-size: 12px">Free delivery</h4>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              src="https://rukminim1.flixcart.com/image/612/612/l2arp8w0/shopsy-t-shirt/s/3/0/s-nmp-try-this-original-imag5xe3sdhgg8sg.jpeg?q=70"
+            />
+            <div class="description">
+              <p class="type" style="font-size: 14px">Casual Wear</p>
+              <h3 class="price" style="font-size: 18px">₹499</h3>
+              <h4 class="delivery" style="font-size: 12px">Free delivery</h4>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              src="https://rukminim1.flixcart.com/image/612/612/l2arp8w0/shopsy-t-shirt/s/3/0/s-nmp-try-this-original-imag5xe3sdhgg8sg.jpeg?q=70"
+            />
+            <div class="description">
+              <p class="type" style="font-size: 14px">Casual Wear</p>
+              <h3 class="price" style="font-size: 18px">₹499</h3>
+              <h4 class="delivery" style="font-size: 12px">Free delivery</h4>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              src="https://rukminim1.flixcart.com/image/612/612/l2arp8w0/shopsy-t-shirt/s/3/0/s-nmp-try-this-original-imag5xe3sdhgg8sg.jpeg?q=70"
+            />
+            <div class="description">
+              <p class="type" style="font-size: 14px">Casual Wear</p>
+              <h3 class="price" style="font-size: 18px">₹499</h3>
+              <h4 class="delivery" style="font-size: 12px">Free delivery</h4>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              src="https://rukminim1.flixcart.com/image/612/612/l2arp8w0/shopsy-t-shirt/s/3/0/s-nmp-try-this-original-imag5xe3sdhgg8sg.jpeg?q=70"
+            />
+            <div class="description">
+              <p class="type" style="font-size: 14px">Casual Wear</p>
+              <h3 class="price" style="font-size: 18px">₹499</h3>
+              <h4 class="delivery" style="font-size: 12px">Free delivery</h4>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              src="https://rukminim1.flixcart.com/image/612/612/l2arp8w0/shopsy-t-shirt/s/3/0/s-nmp-try-this-original-imag5xe3sdhgg8sg.jpeg?q=70"
+            />
+            <div class="description">
+              <p class="type" style="font-size: 14px">Casual Wear</p>
+              <h3 class="price" style="font-size: 18px">₹499</h3>
+              <h4 class="delivery" style="font-size: 12px">Free delivery</h4>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              src="https://rukminim1.flixcart.com/image/612/612/l2arp8w0/shopsy-t-shirt/s/3/0/s-nmp-try-this-original-imag5xe3sdhgg8sg.jpeg?q=70"
+            />
+            <div class="description">
+              <p class="type" style="font-size: 14px">Casual Wear</p>
+              <h3 class="price" style="font-size: 18px">₹499</h3>
+              <h4 class="delivery" style="font-size: 12px">Free delivery</h4>
+            </div>
+          </div>
         </div>
       </div>
     </div>
